@@ -22,9 +22,8 @@ public class AreaDoTriangulo {
             y.a = sc.nextDouble();
             y.b = sc.nextDouble();
             y.c = sc.nextDouble();
-  
-              
-            System.out.printf(" Área do triângulo X é: %.4f \n",x.Area());
+                
+           System.out.printf(" Área do triângulo X é: %.4f \n",x.Area());
            System.out.printf(" Área do triângulo Y é: %.4f \n",y.Area());
            System.out.println("Isso deu muito certo!!!!");
 
