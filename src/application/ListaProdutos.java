@@ -14,33 +14,36 @@ public class ListaProdutos {
 		
 		System.out.println("Enter product data:");
 		System.out.println("Name:");
-		prd.Name = sc.next();
+		prd.name = sc.next();
 		sc.nextLine();
 		
 		System.out.println("Price:");
-		prd.Price = sc.nextDouble();
+		prd.price = sc.nextDouble();
 		sc.nextLine();
 		
 		System.out.println("Quantity in Stock");
-		prd.Quantity = sc.nextInt();
+		prd.quantity	 = sc.nextInt();
 		sc.nextLine();
 		
-		System.out.printf("Product data:%s, %5.2f, %d units, Total: %5.2f",prd.Name,prd.Price,prd.Quantity,prd.TotalValueInStock());
-	
-		System.out.println("\nDigite a quantidade a ser adicionada:");
+		System.out.printf("Product data:%s, %5.2f, %d units, Total: %5.2f\n",prd.name,prd.price,prd.quantity,prd.TotalValueInStock());
+		
+		
+		
+		System.out.println("Digite a quantidade a ser adicionada:");
 		int stockAddition = sc.nextInt();
 		prd.AddProducts(stockAddition);
+		System.out.printf("Product data:%s, %5.2f, %d units, Total: %5.2f\n",prd.name,prd.price,prd.quantity,prd.TotalValueInStock());
 		sc.nextLine();
 		
-		System.out.printf("\nProduct data:%s, %5.2f, %d units, Total: %5.2f",prd.Name,prd.Price,prd.Quantity,prd.TotalValueInStock());
-
 		System.out.println("Digite a quantidade a ser removida:");
 		int stockRemoval = sc.nextInt();
 		prd.RemoveProducts(stockRemoval);
+		System.out.printf("\nProduct data:%s, %5.2f, %d Units, Total: %5.2f",prd.name,prd.price,prd.quantity,prd.TotalValueInStock());
+		sc.nextLine();
 		
-		System.out.printf("\nProduct data:%s, %5.2f, %d units, Total: %5.2f",prd.Name,prd.Price,prd.Quantity,prd.TotalValueInStock());
-
-		System.out.println("Parabéns, ficou ó ... uma merda");
+		System.out.println("\toString");
+		System.out.println("\n"+prd.toString());
+		
 	}
 
 }
